@@ -1,0 +1,25 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible"   content="IE=edge"> 
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0"> 
+    <title>Stopwatch</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+    <p data-component="head">STOP WATCH</p>
+    <input type="number" id="minute" placeholder="minute" style="width: 65px;" data-component="minute">
+    <input type="number" id="second" placeholder="seconds" style="width: 69px;" max="60" data-component="second">
+    <p id="hasil" data-component="hasil">00</p>
+    <p id="hasill" data-component="hasill"></p>
+    <audio src="ding-sound-effect_2.mp3" id="sound" data-component="sound"></audio>
+    <button onclick="yok()" data-component="button" id="btninput">start</button>
+    <button onclick="stop()" id="stop">stop</button>
+</div>
+</body> 
+<script src="app.js"></script> 
+</html>
